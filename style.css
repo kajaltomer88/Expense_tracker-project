@@ -1,0 +1,274 @@
+ /* body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(120deg, #43cea2, #185a9d);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 5px 20px rgba(0,0,0,0.2);
+  text-align: center;
+  width: 400px;
+}
+
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.input-area {
+  margin-bottom: 20px;
+}
+
+input, select {
+  padding: 8px;
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+button {
+  padding: 8px 15px;
+  margin: 5px;
+  background: #43cea2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #2d8f77;
+}
+
+#transaction-list {
+  list-style: none;
+  padding: 0;
+}
+
+#transaction-list li {
+  margin: 5px 0;
+  padding: 8px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.income {
+  background: #d4edda;
+  color: green;
+}
+
+.expense {
+  background: #f8d7da;
+  color: red;
+}
+
+#balance {
+  font-size: 20px;
+  color:#185a9d;
+} */
+
+
+
+
+/* Base */
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background: #f4f6ff;
+    margin: 0;
+}
+
+h1 {
+    text-align: center;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+/* Input & Filters layout */
+.input-area,
+.filters,
+.range-box {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 15px;
+}
+
+input,
+select,
+button {
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+button {
+    cursor: pointer;
+}
+
+/* Voice Button */
+#voiceBtn {
+    background: #0077ff;
+    color: white;
+    border: none;
+}
+
+/* Summary */
+.summary {
+    font-size: 20px;
+    margin: 10px 0;
+    text-align: center;
+}
+
+/* Transaction list */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 14px;
+    margin: 8px 0;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.income {
+    border-left: 5px solid green;
+}
+
+.expense {
+    border-left: 5px solid red;
+}
+
+/* Filter Chips */
+.chips {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.chip {
+    padding: 10px 18px;
+    background: #ddd;
+    border-radius: 30px;
+    border: none;
+}
+
+.chip.active {
+    background: #0077ff;
+    color: white;
+}
+
+/* =============== */
+/* RESPONSIVE CSS  */
+/* =============== */
+
+/* 📱 Small Phones */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 22px;
+    }
+
+    input,
+    select,
+    button {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    li {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .summary {
+        font-size: 18px;
+    }
+
+    .chip {
+        flex: 1 1 30%;
+        text-align: center;
+    }
+}
+
+/* 📱📲 Large Phones */
+@media (max-width: 768px) {
+    input,
+    select,
+    button {
+        width: 48%;
+    }
+
+    #voiceBtn {
+        width: 100%;
+    }
+
+    .range-box input {
+        width: 48%;
+    }
+
+    .chip {
+        font-size: 15px;
+    }
+}
+
+/* 📱 Tablets */
+@media (max-width: 992px) {
+    body {
+        padding: 15px;
+    }
+
+    .input-area,
+    .filters {
+        justify-content: space-between;
+    }
+
+    input,
+    select {
+        flex: 1 1 45%;
+    }
+
+    button,
+    #voiceBtn {
+        flex: 1 1 45%;
+    }
+}
+
+/* 💻 Laptops */
+@media (max-width: 1200px) {
+    input,
+    select {
+        flex: 1 1 30%;
+    }
+
+    .range-box input {
+        flex: 1 1 45%;
+    }
+}
+
+/* 🖥 Large desktop screens */
+@media (min-width: 1400px) {
+    body {
+        max-width: 1200px;
+        margin: auto;
+    }
+}
+
