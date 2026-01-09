@@ -39,12 +39,6 @@ This project is created to practice:
 
 No installation required 🎉
 
----
-
-## 📸 Screenshots
-(Add screenshot here if you want)
-
----
 
 ## 👩‍💻 Developed By
 *Kajal Tomer*
